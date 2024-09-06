@@ -1,0 +1,12 @@
+{
+    "builds": [{
+        "src": "parenting/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+
+
+     "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
+
+    
+}
